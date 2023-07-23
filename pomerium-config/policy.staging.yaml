@@ -1,0 +1,16 @@
+- from: https://staging-api.pomerium.dangvanhoi.dev
+  to: https://staging-ferry-7gur3oytma-an.a.run.app
+  pass_identity_headers: true
+  enable_google_cloud_serverless_authentication: true
+  policy:
+    - allow:
+        and:
+          - claim/iss: https://demo-pomerium.au.auth0.com/
+- from: https://staging.pomerium.dangvanhoi.dev
+  to: https://staging-ferry-7gur3oytma-an.a.run.app
+  pass_identity_headers: true
+  enable_google_cloud_serverless_authentication: true
+  policy:
+    - allow:
+        and:
+          - claim/iss: https://demo-pomerium.au.auth0.com/

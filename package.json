@@ -1,0 +1,12 @@
+{
+  "name": "demo-pomerium-and-auth0",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "azoom-dang-van-hoi <dang.van.hoi@azoom.jp>",
+  "scripts": {
+    "staging:deploy": "",
+    "staging:config": "gcloud secrets versions add staging-hoi-pomerium-gateway-config  --data-file ./pomerium-config/config.staging.yaml --project azoom-n-d-phong",
+    "staging:deploy:pomerium": "/bin/sh ./pomerium-config/deploy.staging.sh"
+  },
+  "license": "MIT"
+}
