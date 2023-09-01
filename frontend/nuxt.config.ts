@@ -31,11 +31,10 @@ export default defineNuxtConfig({
     'nuxt-typed-router'
   ],
   imports: {
-    dirs: ['stores', 'utils', 'constants', 'composables']
+    dirs: ['stores', 'utils', 'types', 'constants', 'composables']
   },
   vite: {
-    plugins: [
-    ]
+    plugins: []
   },
   runtimeConfig: {
     public: {
